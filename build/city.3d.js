@@ -182,8 +182,8 @@ Micro.KEY = 'micropolisJSGame';
  *
  * This code is released under the GNU GPL v3, with some additional terms.
  * Please see the files LICENSE and COPYING for details. Alternatively,
- * consult http://micropolisjs.graememcc.co.uk/LICENSE and
- * http://micropolisjs.graememcc.co.uk/COPYING
+ * consult gearxinteracive@gmail.com
+ * http://avixsoft.github.io/vidcityonline
  *
  */
 
@@ -356,10 +356,6 @@ var messageData = {
 var Messages = Object.defineProperties({}, messageData);
 /* micropolisJS. Adapted by Graeme McCutcheon from Micropolis.
  *
- * This code is released under the GNU GPL v3, with some additional terms.
- * Please see the files LICENSE and COPYING for details. Alternatively,
- * consult http://micropolisjs.graememcc.co.uk/LICENSE and
- * http://micropolisjs.graememcc.co.uk/COPYING
  *
  */
 Micro.MessageManager = function(){
@@ -380,11 +376,6 @@ Micro.MessageManager.prototype = {
 
 
 /* micropolisJS. Adapted by Graeme McCutcheon from Micropolis.
- *
- * This code is released under the GNU GPL v3, with some additional terms.
- * Please see the files LICENSE and COPYING for details. Alternatively,
- * consult http://micropolisjs.graememcc.co.uk/LICENSE and
- * http://micropolisjs.graememcc.co.uk/COPYING
  *
  */
  
@@ -1528,7 +1519,8 @@ Tile.FULLSTADIUM    = 800;
 // Nuclear power plant (4x4).
 Tile.NUCLEARBASE    = 811; // First tile nuclear power plant.
 Tile.NUCLEAR        = 816; // 'Center' tile nuclear power plant.
-Tile.LASTZONE       = 826; // Also last tile nuclear power plant.
+Tile.LASTZONE       = 826; // Also last tile nuclear power plant. if needed add (x.title.nuclear.css) 
+//moving along with CSS in open source will catch the main line 1525 in the city3d.js.min
 
 Tile.LIGHTNINGBOLT  = 827;
 Tile.HBRDG0         = 828;
