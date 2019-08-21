@@ -3067,7 +3067,7 @@ HUB.Base.prototype = {
 
     initStartHub : function(){
         this.full = document.createElement('div');
-        this.full.style.cssText ='position:absolute; top:10px; left:50%; margin-left:-150px; width:300px; height:300px; pointer-events:none;';
+        this.full.style.cssText ='position:absolute; top:100px; left:50%; margin-left:-150px; width:300px; height:300px; pointer-events:none;';
         this.full.id = 'fullStart';
 
         this.hub.appendChild( this.full );
@@ -3075,7 +3075,7 @@ HUB.Base.prototype = {
     	var b2 = this.addButton(this.full, 'New Lot',  [120, 26, 22], 'position:absolute; top:150px; left:0px;');
         var b3 = this.addButton(this.full, 'Add Hills',  [120, 26, 22], 'position:absolute; top:150px; right:0px;');
         var b4 = this.addButton(this.full, 'Return to Lot',  [276, 26, 22], 'position:absolute; top:90px; left:0px;');
-        this.addSelector("Position", ['Contractor', 'Commisioner', 'Mayor'], setDifficulty, 0);
+        this.addSelector("Position", ['Contractor', 'Council', 'Mayor'], setDifficulty, 0);
 
         b1.addEventListener('click',  function ( e ) { e.preventDefault(); playMap(); }, false);
         b2.addEventListener('click',  function ( e ) { e.preventDefault(); newMap(); }, false);
