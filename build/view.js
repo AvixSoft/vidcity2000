@@ -211,7 +211,7 @@ function mapClick() {
 }
 
 function initCity() {
-    hub.subtitle.innerHTML = "Generating world...";
+    hub.subtitle.innerHTML = "Checking Water Depth...";
     loop();
 
     cityWorker.postMessage = cityWorker.webkitPostMessage || cityWorker.postMessage;
@@ -1076,7 +1076,7 @@ V3D.Base.prototype = {
 	    //else loader.parser = THREE.SEA3D.BUFFER;
 	    loader.load( this.rootModel );
 
-	    if(hub!==null)hub.subtitle.innerHTML = "Loading 3d model ...";
+	    if(hub!==null)hub.subtitle.innerHTML = "Surveying Land...";
 	},
 
 	//----------------------------------- 3D GEOMETRY
@@ -3007,12 +3007,12 @@ HUB.Base.prototype = {
         this.fullMid.style.cssText ='position:absolute; top:10px; left:50%; width:300px; height:300px; margin-left:-150px; pointer-events:none; display:block;';
 
         this.title = document.createElement('div');
-        this.title.innerHTML = "3D.CITY";
+        this.title.innerHTML = "VidCity";
     	this.title.style.cssText = 'position:absolute; font-size:44px; top:50%; left:0; margin-top:-30px; width:300px; height:60px; pointer-events:none; text-align:center;';
         
         this.subtitle = document.createElement('div');
         this.subtitle.style.cssText = 'position:absolute; font-size:14px; top:50%; left:0; margin-top:20px; width:300px; height:80px; pointer-events:none; text-align:center;';
-        this.subtitle.innerHTML = "Generating world...";
+        this.subtitle.innerHTML = "Searching Lots...";
 
         this.logo = document.getElementById('logo');
         this.logo.style.display = 'block';
@@ -3071,11 +3071,11 @@ HUB.Base.prototype = {
         this.full.id = 'fullStart';
 
         this.hub.appendChild( this.full );
-        var b1 = this.addButton(this.full, 'Play Game', [276,48,40], 'position:absolute; top:10px; left:0px;');
-    	var b2 = this.addButton(this.full, 'New Map',  [120, 26, 22], 'position:absolute; top:150px; left:0px;');
-        var b3 = this.addButton(this.full, 'Height Map',  [120, 26, 22], 'position:absolute; top:150px; right:0px;');
-        var b4 = this.addButton(this.full, 'Load Map',  [276, 26, 22], 'position:absolute; top:90px; left:0px;');
-        this.addSelector("DIFFICULTY", ['LOW', 'MEDIUM', 'HARD'], setDifficulty, 0);
+        var b1 = this.addButton(this.full, 'Purchase', [276,48,40], 'position:absolute; top:10px; left:0px;');
+    	var b2 = this.addButton(this.full, 'New Lot',  [120, 26, 22], 'position:absolute; top:150px; left:0px;');
+        var b3 = this.addButton(this.full, 'Add Hills',  [120, 26, 22], 'position:absolute; top:150px; right:0px;');
+        var b4 = this.addButton(this.full, 'Return to Lot',  [276, 26, 22], 'position:absolute; top:90px; left:0px;');
+        this.addSelector("Position", ['Contractor', 'Commisioner', 'Mayor'], setDifficulty, 0);
 
         b1.addEventListener('click',  function ( e ) { e.preventDefault(); playMap(); }, false);
         b2.addEventListener('click',  function ( e ) { e.preventDefault(); newMap(); }, false);
